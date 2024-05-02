@@ -40,6 +40,7 @@ def get_clause_token_span_for_verb(verb, doc, all_verbs):
                 last_token_index = child.i
     return(first_token_index, last_token_index)
 
+print_dependencies(doc)
 root_token = find_root_of_sentence(doc)
 other_verbs = find_other_verbs(doc, root_token)
 all_verbs = [root_token] + other_verbs
